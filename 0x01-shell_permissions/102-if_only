@@ -1,2 +1,2 @@
 #!/bin/bash
-find /path/to/hello -user guillaume -exec chown betty:betty {} 
+find /path/to/hello -user guillaume -exec chown betty:betty {} \ -print 
