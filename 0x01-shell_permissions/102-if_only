@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty hello .
+find /path/to/hello -user guillaume -exec chown betty:betty {} 
