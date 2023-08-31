@@ -1,4 +1,2 @@
 #!/bin/bash
-if [ "$(stat -c %U /path/to/hello)" = "guillaume" ]; then
-    sudo chown betty:betty /path/to/hello
-fi 
+find hello -user guillaume -exec chown betty:betty {} \ 
