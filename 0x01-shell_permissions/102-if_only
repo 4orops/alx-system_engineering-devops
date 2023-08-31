@@ -1,2 +1,2 @@
 #!/bin/bash
-find /path/to/hello -user guillaume -exec chown betty:betty {} \ -print 
+[ "$(stat -c %U /path/to/hello)" = "guillaume" ] && sudo chown betty:betty /path/to/hello 
